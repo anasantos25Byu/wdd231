@@ -1,12 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Ana Suely Côrtes Santos | WDD231</title>
+
+    <meta name="description"
+        content="Página inicial de Ana Suely Côrtes Santos para o curso WDD231 - Desenvolvimento Frontend para Web I.">
+    <meta name="author" content="Ana Suely Côrtes Santos">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/maior.css">
+
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="cabecalho">
+            <a href="index.html" class="marca">
+                <img src="imagens/logo.svg" alt="Logo de Ana Suely">
+                <span>Ana Suely Côrtes Santos</span>
+            </a>
+
+            <button id="menuBotao"
+                class="menu-botao"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="menuNavegacao">
+                ☰
+            </button>
+        </div>
+
+        <nav id="menuNavegacao" class="navegacao">
+            <a href="index.html" class="ativo">Página Inicial</a>
+            <a href="camara/index.html">Projeto da Câmara</a>
+            <a href="final/index.html">Projeto Final</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>WDD 231 - Página Inicial do Curso</h1>
+
+        <div class="conteudo-principal">
+
+            <section class="sobre">
+                <h2>Sobre Mim</h2>
+
+                <div class="sobre-conteudo">
+                    <div>
+                        <p>
+                            Olá! Meu nome é <strong>Ana Suely Côrtes Santos</strong>.
+                            Sou estudante de Desenvolvimento de Software e estou
+                            desenvolvendo minhas habilidades em programação,
+                            desenvolvimento web e análise de dados.
+                        </p>
+
+                        <p>
+                            Esta página faz parte das atividades do curso
+                            <strong>WDD 231 - Desenvolvimento Frontend para Web I</strong>.
+                            Aqui apresento um pouco sobre minha trajetória acadêmica
+                            e os cursos que fazem parte da minha formação.
+                        </p>
+                    </div>
+
+                    <div class="perfil">
+                        <div class="perfil-icone">AS</div>
+                        <p>Desenvolvimento de Software</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certificado">
+                <h2>Certificado de Programação de Computadores e Web</h2>
+
+                <div class="filtros">
+                    <button id="todos" class="filtro ativo">Todos os Cursos</button>
+                    <button id="wdd" class="filtro">Cursos WDD</button>
+                    <button id="cse" class="filtro">Cursos CSE</button>
+                </div>
+
+                <p class="creditos">
+                    Créditos exibidos:
+                    <strong><span id="totalCreditos">16</span></strong>
+                </p>
+
+                <div id="listaCursos" class="lista-cursos"></div>
+            </section>
+
+            <section class="progresso">
+                <h2>Meu Progresso</h2>
+
+                <p>
+                    Estou avançando na minha formação em Desenvolvimento de Software,
+                    adquirindo conhecimentos em programação, desenvolvimento web,
+                    banco de dados e desenvolvimento frontend.
+                </p>
+
+                <div class="progresso-caixa">
+                    <div class="progresso-item">
+                        <strong>4</strong>
+                        <span>Cursos concluídos</span>
+                    </div>
+
+                    <div class="progresso-item">
+                        <strong>2</strong>
+                        <span>Cursos em andamento</span>
+                    </div>
+
+                    <div class="progresso-item">
+                        <strong>12</strong>
+                        <span>Créditos do certificado</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="redes-sociais">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                LinkedIn
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="anoAtual"></span>
+            Ana Suely Côrtes Santos |
+            Sergipe, Brasil
+        </p>
+
+        <p id="ultimaModificacao"></p>
+
+    </footer>
+
 </body>
+
 </html>
+
 

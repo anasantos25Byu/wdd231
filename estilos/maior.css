@@ -1,0 +1,79 @@
+@media screen and (min-width: 700px) {
+
+    .cabecalho {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .menu-botao {
+        display: none;
+    }
+
+    .navegacao {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navegacao a {
+        border-top: none;
+        padding: 1rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+    }
+
+    .filtros {
+        display: flex;
+        justify-content: center;
+    }
+
+    .filtro {
+        min-width: 150px;
+    }
+
+    .lista-cursos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .progresso-caixa {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    main {
+        padding: 2rem;
+    }
+
+    .conteudo-principal {
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+    }
+
+    .sobre {
+        grid-row: span 2;
+    }
+
+    .certificado {
+        grid-column: 2;
+    }
+
+    .progresso {
+        grid-column: 2;
+    }
+
+    .lista-cursos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+

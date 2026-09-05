@@ -1,0 +1,255 @@
+:root {
+    --cor-principal: #17324d;
+    --cor-secundaria: #2c6e91;
+    --cor-destaque: #f4b942;
+    --cor-fundo: #f5f7fa;
+    --cor-branco: #ffffff;
+    --cor-texto: #1f2933;
+    --cor-concluido: #d9f2df;
+    --cor-borda: #d1d9e0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+}
+
+.cabecalho {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.marca img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-botao {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.navegacao {
+    display: none;
+    flex-direction: column;
+    background-color: var(--cor-principal);
+}
+
+.navegacao.aberta {
+    display: flex;
+}
+
+.navegacao a {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-weight: 600;
+}
+
+.navegacao a:hover,
+.navegacao a.ativo {
+    background-color: var(--cor-secundaria);
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--cor-principal);
+}
+
+h2 {
+    color: var(--cor-principal);
+}
+
+.conteudo-principal {
+    display: grid;
+    gap: 1rem;
+}
+
+section {
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-conteudo {
+    display: grid;
+    gap: 1rem;
+}
+
+.perfil {
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.perfil-icone {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--cor-secundaria);
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.filtros {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.filtro {
+    border: 2px solid var(--cor-principal);
+    background-color: white;
+    color: var(--cor-principal);
+    border-radius: 6px;
+    padding: 0.7rem;
+    font-weight: 600;
+}
+
+.filtro:hover,
+.filtro.ativo {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.creditos {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.lista-cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+}
+
+.curso {
+    border: 2px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+}
+
+.curso.concluido {
+    background-color: var(--cor-concluido);
+    border-color: #3d8b4f;
+}
+
+.curso h3 {
+    margin-top: 0;
+    color: var(--cor-principal);
+}
+
+.curso-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.status {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.curso.concluido .status {
+    color: #216b2e;
+}
+
+.progresso-caixa {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.progresso-item {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.progresso-item strong {
+    display: block;
+    font-size: 1.8rem;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.redes-sociais a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+}
+
+.redes-sociais a:hover {
+    background-color: white;
+    color: var(--cor-principal);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 319px) {
+    body {
+        min-width: 320px;
+    }
+}

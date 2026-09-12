@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diretório de Membros - Câmara de Comércio</title>
+  <meta name="description" content="Diretório oficial de empresas e membros da Câmara de Comércio local.">
+  <meta name="author" content="Ana Suely Côrtes Santos">
+
+  <!-- Favicon -->
+  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph Meta Tags (Facebook/Social) -->
+  <meta property="og:title" content="Diretório de Membros - Câmara de Comércio">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Encontre empresas parceiras e fornecedores locais no diretório da nossa Câmara de Comércio.">
+  <meta property="og:image" content="https://seu-usuario.github.io/wdd231/camara/imagens/og-image.jpg">
+  <meta property="og:url" content="https://seu-usuario.github.io/wdd231/camara/diretorio.html">
+
+  <!-- CSS Reset / Normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Estilos Próprios -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/diretorio.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <img src="imagens/favicon.ico" alt="Logo da Câmara de Comércio" width="50" height="50">
+      <h1>Câmara de Comércio</h1>
+    </div>
+    <button id="menu-toggle" aria-label="Abrir menu de navegação">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="diretorio.html" class="active">Diretório</a></li>
+        <li><a href="juntar.html">Junte-se</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Diretório de Membros</h2>
+
+    <!-- Botões de Alternância de Layout (Grade / Lista) -->
+    <div class="view-toggle">
+      <button id="btn-grid" class="active" aria-label="Visualização em Grade">📱 Grade</button>
+      <button id="btn-list" aria-label="Visualização em Lista">📄 Lista</button>
+    </div>
+
+    <!-- Contêiner onde o JS inserirá as empresas -->
+    <div id="members-container" class="grid-view"></div>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Câmara de Comércio</strong></p>
+      <p>Av. Principal, 100 - Centro</p>
+      <p>contato@camaradecomercio.org | (11) 4000-0000</p>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="current-year"></span> | Ana Suely Côrtes Santos | WDD 231</p>
+      <p>Última modificação: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

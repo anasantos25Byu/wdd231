@@ -1,0 +1,65 @@
+[
+  {
+    "nome": "TechSoluções Inovadoras",
+    "endereco": "Av. Paulista, 1000 - São Paulo, SP",
+    "telefone": "(11) 3000-1000",
+    "site": "https://example.com/techsolucoes",
+    "imagem": "empresa1.png",
+    "nivel": 3,
+    "descricao": "Desenvolvimento de software e consultoria em TI."
+  },
+  {
+    "nome": "Café & Grãos Gourmet",
+    "endereco": "Rua das Flores, 250 - Centro",
+    "telefone": "(11) 3000-2000",
+    "site": "https://example.com/cafegraos",
+    "imagem": "empresa2.png",
+    "nivel": 2,
+    "descricao": "Cafés especiais e torrefação artesanal."
+  },
+  {
+    "nome": "Logística Global Brasil",
+    "endereco": "Rodovia dos Bandeirantes, Km 45",
+    "telefone": "(11) 3000-3000",
+    "site": "https://example.com/logistica",
+    "imagem": "empresa3.png",
+    "nivel": 1,
+    "descricao": "Transporte e soluções de cadeia de suprimentos."
+  },
+  {
+    "nome": "EcoEnergia Renováveis",
+    "endereco": "Rua Sol Nascente, 88",
+    "telefone": "(11) 3000-4000",
+    "site": "https://example.com/ecoenergia",
+    "imagem": "empresa4.png",
+    "nivel": 3,
+    "descricao": "Instalação de painéis solares e projetos sustentáveis."
+  },
+  {
+    "nome": "Construtora Cerne",
+    "endereco": "Av. das Nações, 500",
+    "telefone": "(11) 3000-5000",
+    "site": "https://example.com/construtora",
+    "imagem": "empresa5.png",
+    "nivel": 2,
+    "descricao": "Obras civis e engenharia estrutural."
+  },
+  {
+    "nome": "Mercado & Empório Central",
+    "endereco": "Praça da Matriz, 12",
+    "telefone": "(11) 3000-6000",
+    "site": "https://example.com/emporio",
+    "imagem": "empresa6.png",
+    "nivel": 1,
+    "descricao": "Produtos orgânicos e artigos regionais."
+  },
+  {
+    "nome": "Agência Vanguarda Marketing",
+    "endereco": "Rua Silva Jardim, 430",
+    "telefone": "(11) 3000-7000",
+    "site": "https://example.com/vanguarda",
+    "imagem": "empresa7.png",
+    "nivel": 2,
+    "descricao": "Estratégias de marketing digital e branding."
+  }
+]
